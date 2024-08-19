@@ -31,7 +31,7 @@ namespace fx
             }
         }
 
-        private string hostname = "sample.firstresponsedashboard.com";
+        private string hostname = "sample.bellmorecode.com";
         const string key = "XXX";
         private async Task<string> SendAsync(string path)
         {
