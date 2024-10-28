@@ -5,16 +5,16 @@ using System.Diagnostics;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
-namespace HerrickAzureFunctions.Utils
+namespace Common.Utils
 {
     public static class GraphClientFactory
     {
         public static GraphServiceClient GetTeamsCallLoggerGraphClient()
         {
             return Utils.GraphClientFactory.GetGraphClient(
-                Environment.GetEnvironmentVariable("TeamsCallLogger-Prod-client"),
-                Environment.GetEnvironmentVariable("TeamsCallLogger-Prod-tenant"),
-                Environment.GetEnvironmentVariable("TeamsCallLogger-Prod-secret"));
+                Environment.GetEnvironmentVariable("client"),
+                Environment.GetEnvironmentVariable("tenant"),
+                Environment.GetEnvironmentVariable("secret"));
         }
 
 
@@ -66,12 +66,12 @@ namespace HerrickAzureFunctions.Utils
             try
             {
 
-                string clientId = Environment.GetEnvironmentVariable("conflicts:o365-key"),
-                        tenant = Environment.GetEnvironmentVariable("conflicts:o365-tenant"),
-                        secret = Environment.GetEnvironmentVariable("conflicts:o365-secret");
+                string clientId = Environment.GetEnvironmentVariable("clientid"),
+                        tenant = Environment.GetEnvironmentVariable("tenant"),
+                        secret = Environment.GetEnvironmentVariable("secret");
 
                 var client = GraphClientFactory.GetGraphClient(clientId, tenant, secret);
-                await client.Users["mienaro@herrick.com"].SendMail(msg, true).Request().PostAsync();
+                await client.Users["glenn@test.com"].SendMail(msg, true).Request().PostAsync();
 
             }
             catch (Exception ex)
