@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+<CodeSnippet Format="1.0.0">
+   <Header>
+     <SnippetTypes>
+       <SnippetType>Expansion</SnippetType>
+     </SnippetTypes>
+     <Title>MVVM Property</Title>
+     <Description>A property raising PropertyChanged with a string. </Description>
+     <Shortcut>propq</Shortcut>
+   </Header>
+   <Snippet>
+     <Declarations>
+       <Literal Editable="true">
+         <ID>Type</ID>
+         <ToolTip>Property type</ToolTip>
+         <Default>string</Default>
+         <Function>
+         </Function>
+       </Literal>
+       <Literal Editable="true">
+         <ID>AttributeName</ID>
+         <ToolTip>Attribute name</ToolTip>
+         <Default>title</Default>
+         <Function>
+         </Function>
+       </Literal>
+       <Literal Editable="true">
+         <ID>PropertyName</ID>
+         <ToolTip>Property name</ToolTip>
+         <Default>Title</Default>
+         <Function>
+         </Function>
+       </Literal>
+     </Declarations>
+     <Code Language="csharp"><![CDATA[private $Type$ _$AttributeName$;
+       public $Type$ $PropertyName$
+       {
+           get { return _$AttributeName$; }
+           set { if (_$AttributeName$ == value) return;
+               _$AttributeName$ = value;
+               RaisePropertyChanged("$PropertyName$"); }
+       }]]></Code>
+   </Snippet>
+</CodeSnippet>
+</CodeSnippets>
