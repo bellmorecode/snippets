@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>glennnn.eth</title>
+	</head>
+	<body>
+		<div class="pad">...</div>
+		<script type="text/javascript">
+			let url = "https://glennferrie.github.io/";
+			fetch(url).then(res => { return res.text(); })
+					.then(html => {
+						document.querySelector(".pad").innerHTML = html;
+					})
+					.catch(error => {
+						console.error('Error fetching the page:', error);
+					});
+		</script>
+	</body>
+</html>
