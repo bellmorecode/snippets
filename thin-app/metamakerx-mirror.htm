@@ -1,18 +1,172 @@
-<html>
-	<head>
-		<title>metamakerx.eth</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+			<title>metamakerx.eth</title>
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLTLFYL2X9"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-ZLTLFYL2X9');
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="MetaMakerX">
+<meta property="og:url" content="https://metamakerx.com/">
+<meta property="og:site_name" content="MetaMakerX">
+<meta property="og:title" content="MetaMakerX">
+<meta property="og:type" content="website">
+<meta property="og:image" content="">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MetaMakerX">
+<meta name="twitter:image" content="">
+<meta name="twitter:image:alt" content="MetaMakerX">
+<link rel="icon" type="image/x-icon" href="https://metamakerx.com/images/mmxlogo.ico?v=20250724">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bitcount+Prop+Single:wght@100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
+<link href="https://metamakerx.com/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://metamakerx.com/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://bootswatch.com/5/cyborg/bootstrap.min.css" />
+<link href="https://metamakerx.com/css/mmx.css" rel="stylesheet" />
+<style type="text/css">
+    body { overflow-y: auto; }
+
+    .silk { font-family: Silkscreen; }
+    .aw { font-family: Audiowide; }
+    .dotz { font-family: 'Bitcount Prop Single'; }
+
+    .btn-outline-warning {
+        --bs-btn-color: goldenrod;
+        --bs-btn-border-color: goldenrod;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: goldenrod;
+        --bs-btn-hover-border-color: goldenrod;
+        --bs-btn-focus-shadow-rgb: 255, 136, 0;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: goldenrod;
+        --bs-btn-active-border-color: goldenrod;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: goldenrod;
+        --bs-btn-disabled-bg: transparent;
+        --bs-btn-disabled-border-color: goldenrod;
+        --bs-gradient: none;
+    }
+
+    .modelListItem {
+        margin-block: 16px;
+        margin-inline: 16px;
+        outline: solid 2px transparent;
+        display: inline-block;
+        padding: 20px;
+        outline: solid 4px #333;
+        background: linear-gradient(0deg,rgba(20, 20, 20, 1) 0%, rgba(220, 220, 220, 0.75) 45%);
+    }
+
+    .modelListItem.mine {
+            background: linear-gradient(0deg,rgba(184, 134, 11, 1) 0%, rgba(218, 165, 32, 0.44) 45%);
+    }
+
+    .model-container {
+        outline: solid 2px transparent;
+        display: inline-block;
+        width: 420px;
+    }
+
+    model-viewer {
+
+        display: inline-block;
+        width: 420px;
+        height: 420px;
+    }
+
+    .about-model {
+
+        display: inline-block;
+        width: 420px;
+    }
+
+</style>
 	</head>
-	<body>
-		<div class="pad">...</div>
-		<script type="text/javascript">
-			let url = "https://metamakerx.com/apps";
-			fetch(url).then(res => { return res.text(); })
-					.then(html => {
-						document.querySelector(".pad").innerHTML = html;
-					})
-					.catch(error => {
-						console.error('Error fetching the page:', error);
-					});
-		</script>
-	</body>
+<body class="metamakerx">
+    <nav class="mmx " style="background-color: tranparent;">
+        <a href="/" class="text-white"><img src="https://metamakerx.com/images/mmxlogo-tw.png" height="64"  /></a>
+    </nav>
+    
+	<p class="lead text-center silk">
+    <span class="text-white">METAMAKERX</span> <br />
+    Building professionally and experimenting daily on the web and blockchain.
+</p>
+
+<div class="jumbotron text-center mt-2 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-12 offset-sm-0 px-2 py-2 projects-list">
+
+    <a href="/modelfoundry" class="btn btn-lg px-0 my-4 py-3 silk btn-outline-light text-white border border-1 border-white" style=" border-radius: 40px;">&there4; Model Foundry</a>
+
+    <a href="/lab/okcomputers" target="_blank" class="btn btn-lg my-4 px-0 py-3 silk btn-outline-dark " style=" border-radius: 40px;"> <span class="fa fa-robot"></span> okcomputers lab</a>
+
+    <a href="https://nipd.xyz/mint/nipdacademy" target="_blank" class="btn btn-lg px-0 my-4 py-3 silk  btn-outline-primary" style=" border-radius: 40px;"> <span class="fa fa-shield"></span> NIPD Academy OE</a>
+
+    <a href="https://badgrovers.com" class="btn btn-lg my-4 px-0 py-3 silk  btn-outline-warning" style=" border-radius: 40px;" target="_blank">
+        <span class="fa fa-money-bills"></span>
+        <span>Bad Grovers</span>
+    </a>
+
+    <a href="https://unfounded.neocities.org/" class="btn btn-lg my-4 px-0 py-3 silk btn-outline-dark " style=" border-radius: 40px;" target="_blank">
+        <span class="fa fa-map"></span>
+        <span>Unfounded</span>
+    </a>
+
+    <a href="/clip" class="btn btn-lg my-4 px-0 py-3 silk  btn-outline-info " style=" border-radius: 40px;"> <span class="fa fa-paperclip me-2"></span> clipper</a>
+
+    <a href="/loot" class="btn btn-lg my-4 px-0 py-3 d-none  peralta " style="background-color: whitesmoke;  border-radius: 40px;">LOOT</a>
+
+    <a href="/lootgame" class="btn btn-lg d-none  px-0 my-4 py-3 peralta disabled" style="background-color: #888888; border-radius: 40px;">LOOT game</a>
+
+    <a href="/mint/genesis" class="btn d-none  btn-lg px-0 my-4 py-3 ms disabled" style="background-color: #888888; border-radius: 40px;" target="_blank" onclick="alert('Coming soon'); return false;">Open-G: Our open edition, generative membership token</a>
+
+    <a href="/bsider" class="btn btn-lg d-none py-3 my-4 ms disabled" style="background-color: #888888; border-radius: 40px;">bsider</a>
+
+    <a href="/contract-testpage" class=" d-none btn btn-lg py-3 my-4 ms" style="background-color: whitesmoke; border-radius: 40px;">contract testpage</a>
+
+
+</div>
+
+<div class="text-center">
+    <div class="btn-group">
+        <a href="https://x.com/glennferrie" class="btn btn-lg btn-link text-white" target="_blank"><span class="fa fa-brands fa-twitter"></span></a>
+        <a href="https://linkedin.com/in/glennferrie" class="btn btn-lg btn-link text-white" target="_blank"><span class="fa fa-brands fa-linkedin"></span></a>
+        <a href="https://www.paypal.com/qrcodes/managed/fd4496ad-57df-43a6-951f-916104c60e57?utm_source=consapp_download" class="btn btn-lg btn-link text-white" target="_blank"><span class="fa  fa-brands fa-paypal"></span> </a>
+    </div>
+    <a href="https://glennferrie.github.io" class="btn btn-link text-white silk text-decoration-none" target="_blank">Bio</a>
+</div>
+
+<div class="text-center">
+    <label class="sizeIndicator silk d-none"> ... </label>
+</div>
+
+    <script src="https://metamakerx.com/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://metamakerx.com/lib/bootstrap/dist/js/bootstrap.js"></script>
+    
+    
+	<script type="text/javascript">
+    function updateWindowSize() {
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+        console.log(`Current Window Size: ${windowWidth}px x ${windowHeight}px`);
+        $(".sizeIndicator").text(`w: ${windowWidth}px, h: ${windowHeight}px`);
+    }
+
+    // Call on page load
+    document.addEventListener('DOMContentLoaded', updateWindowSize);
+
+    // Call on window resize
+    window.addEventListener('resize', updateWindowSize);
+</script>
+</body>
 </html>
