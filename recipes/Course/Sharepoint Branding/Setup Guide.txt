@@ -1,0 +1,29 @@
+On the SharePoint server:
+
+1)      Open PowerShell as Administrator and execute the following command to allow script execution:  Set-ExecutionPolicy Unrestricted
+
+2)      Extract the contents of the solutions.zip into a folder on the SharePoint server VM, i.e. C:\Course1535.
+
+3)      Browse into the solutions folder, right click on Configure-Server.ps1 and select Properties.
+
+4)      Click Unblock and then click OK.
+
+5)      To configure WinRM and enable CredSSP authentication, right click Configure-Server.ps1 and select Run with PowerShell.
+
+6)      Copy “Help Team.lnk” to your SharePoint Server VM desktop.  Rename IF DESIRED.
+
+7)      Double-click the desktop link you just created to help someone!
+
+On the Workstation VM:
+
+1)  Logon as Administrator, launch an elevated PowerShell prompt and execute the following command to allow script execution:  Set-ExecutionPolicy Unrestricted
+
+2)  Copy the solutions files from the Workstation folder to the local "c:\1535 Files" folder.
+
+3)  For each of the two script files, right click on them, select Properties, click Unblock and then click OK.
+
+4)  Right-click on Configure-Workstation.ps1 and select Run with PowerShell.
+
+5)  Create a new shortcut in c:\Users\Public\Public Desktop with a target:  powershell.exe -command "& 'C:\1535 Files\RestoreExercise.ps1'"
+
+6)  Sign back in as a team user and test your new shortcut.  

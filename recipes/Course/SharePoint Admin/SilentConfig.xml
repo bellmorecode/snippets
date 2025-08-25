@@ -1,0 +1,23 @@
+<Configuration>
+  <Package Id="spswfe">
+    <Setting Id="SETUPCALLED" Value="1"/>
+    <Setting Id="OFFICESERVERPREMIUM" Value="1" />
+  </Package>
+
+  <Logging Type="verbose" Path="%temp%" Template="SharePoint Server Setup(*).log"/>
+
+  <Display 
+    Level="None" 
+    CompletionNotice="No" 
+    AcceptEula="Yes"
+  />
+
+  <INSTALLLOCATION Value="C:\Program Files\Microsoft Office Servers\" />
+  <PIDKEY Value="NQTMW-K63MQ-39G6H-B2CH9-FRDWJ"/>
+  <DATADIR Value="C:\Program Files\Microsoft Office Servers\15.0\Data" />
+  <Setting Id="SERVERROLE" Value="APPLICATION"/>
+  <Setting Id="USINGUIINSTALLMODE" Value="1"/>
+  <Setting Id="SETUPTYPE" Value="CLEAN_INSTALL"/>
+  <Setting Id="SETUP_REBOOT" Value="Never"/>
+  <Setting Id="AllowWindowsClientInstall" Value="True"/>
+</Configuration>

@@ -1,0 +1,45 @@
+{
+  "@odata.etag": "\"3\"",
+  "ItemInternalId": "1",
+  "ID": 1,
+  "Title": "Amazon",
+  "Ticker": "AMZN",
+  "MarketPrice": 1949.3,
+  "LastUpdated": "2019-04-27",
+  "Exchange": "NSDQ",
+  "hx9z": "Online Shopping, Cloud Computing",
+  "Modified": "2019-04-27T13:14:29Z",
+  "Created": "2019-04-27T04:20:36Z",
+  "Author": {
+    "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
+    "Claims": "i:0#.f|membership|glenn@gfdata.io",
+    "DisplayName": "Glenn Ferrie",
+    "Email": "glenn@gfdata.io",
+    "Picture": "https://gfdata.sharepoint.com/sites/investment/_layouts/15/UserPhoto.aspx?Size=L&AccountName=glenn@gfdata.io",
+    "Department": "IT",
+    "JobTitle": "Tech Guy"
+  },
+  "Author#Claims": "i:0#.f|membership|glenn@gfdata.io",
+  "Editor": {
+    "@odata.type": "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
+    "Claims": "i:0#.f|membership|glenn@gfdata.io",
+    "DisplayName": "Glenn Ferrie",
+    "Email": "glenn@gfdata.io",
+    "Picture": "https://gfdata.sharepoint.com/sites/investment/_layouts/15/UserPhoto.aspx?Size=L&AccountName=glenn@gfdata.io",
+    "Department": "IT",
+    "JobTitle": "Tech Guy"
+  },
+  "Editor#Claims": "i:0#.f|membership|glenn@gfdata.io",
+  "{Identifier}": "Lists%252fInvestments%252f1_.000",
+  "{IsFolder}": false,
+  "{Thumbnail}": {
+    "Large": null,
+    "Medium": null,
+    "Small": null
+  },
+  "{Link}": "https://gfdata.sharepoint.com/sites/investment/_layouts/15/listform.aspx?PageType=4&ListId=e9bae388-6268-4ac1-8898-58c8d07f8431&ID=1&ContentTypeID=0x010080E12FCB5D86734CA21F186B0456A71B",
+  "{Name}": "Amazon",
+  "{FilenameWithExtension}": "Amazon",
+  "{Path}": "Lists/Investments/",
+  "{HasAttachments}": false
+}

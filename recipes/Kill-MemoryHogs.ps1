@@ -1,0 +1,1 @@
+﻿get-process | Where-Object {$_.WorkingSet -GT 1GB} | Stop-Process -WhatIf
