@@ -1,4 +1,4 @@
-# Some Details for manageing the Permissions for apps in SharePoint
+# Some Details for managing the Permissions for apps in SharePoint
 
 https://tenantName-admin.sharepoint.com/_layouts/appinv.aspx
 
